@@ -2,9 +2,11 @@ import React from "react";
 
 const NumberButton = ({ value }) => {
   return (
-    <div>
-      <button>{value}</button>
-    </div>
+    <button 
+      className={Number(value) === 0 ? 'bigButton' : null}
+      >
+      {value}
+    </button>
   );
 };
 

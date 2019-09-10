@@ -6,9 +6,15 @@ const Numbers = () => {
   const [ numberState ] = useState(numbers);
 
   return (
-    <div>
+    <div className="numbers">
       {
-        numberState.map(number => (<NumberButton number={number} key={number} value={number} />))
+        numberState.map(
+          number => 
+          <NumberButton 
+            key={number} 
+            value={number} 
+          />
+        )
       }
     </div>
   );

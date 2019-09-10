@@ -6,9 +6,15 @@ const Operators = () => {
   const [operatorState, setOperatorrState] = useState(operators);
 
   return (
-    <div>
+    <div className="operators">
       {
-        operatorState.map(item => (<OperatorButton key={item.value} value={item.value} />))
+        operatorState.map(
+          item => 
+          <OperatorButton
+            key={item.value} 
+            value={item.value} 
+          />
+        )
       }
     </div>
   );

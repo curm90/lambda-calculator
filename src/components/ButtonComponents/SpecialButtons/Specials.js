@@ -5,9 +5,15 @@ import { specials } from '../../../data';
 const Specials = () => {
   const [specialState, setSpecialState] = useState(specials);  
   return (
-    <div>
+    <div className="specials">
       {
-        specialState.map(item => <SpecialButton key={item} value={item} />)
+        specialState.map(
+          item => 
+          <SpecialButton 
+            key={item} 
+            value={item}
+          />
+        )
       }
     </div>
   );
